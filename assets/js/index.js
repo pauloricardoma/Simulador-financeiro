@@ -30,17 +30,6 @@ function simular() {
   }
 
   // Captura dos elementos div, para resetar a tabela, sempre que houver um novo requerimento
-  const prestacao = [
-    { prestacao },
-    { amortizacao },
-    { juros_prestacao },
-    { total_prestacao },
-  ];
-  for (let i = 0; i < prestacao.length; i++) {
-    prestacao[i] = document.querySelector(`#${prestacao[i]}`);
-    prestacao[i].textContent = '';
-  }
-
   const prestacao1 = document.getElementById('prestacao');
   const prestacao2 = document.getElementById('amortizacao');
   const prestacao3 = document.getElementById('juros_prestacao');
@@ -49,6 +38,7 @@ function simular() {
   prestacao2.textContent = '';
   prestacao3.textContent = '';
   prestacao4.textContent = '';
+
   // Loop para criação dinâmica das tabelas com as tabelas de 1 ao total dos prazo em meses, quebra pra mostrar somente 5 valores
   for (i = 0; i < prazomensal; i++) {
     const linha1 = document.createElement('tr');
