@@ -16,7 +16,7 @@ function simular() {
 
   // Variável pra guardar o valor do cálculo dos juros por prestação e variável pra guardar o valor do total, juros por prestação mais taxa de amortização
   let jurosacmarray = [];
-  total = [];
+  let total = [];
 
   // Loop para cálculo do somatório de valores para o total dos juros acumulados, para o numero das prestações, sua amortização, juros por prestação e o total por prestação
   let jurosacm = 0;
