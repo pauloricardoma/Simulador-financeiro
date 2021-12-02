@@ -7,6 +7,7 @@ function simular() {
   const res_prazo_meses = document.getElementById('res_prazo_meses');
   const res_juros_mes = document.getElementById('res_juros_mes');
   const res_juros_acm = document.getElementById('res_juros_acm');
+
   // Cálculo dos juros mensais, do prazo em meses e da taxa de amortização paga/mês
   let jurosmensal = Math.pow(1 + jurosanual.valueAsNumber, 1 / 12) - 1;
   let prazomensal = prazoanos.valueAsNumber * 12;
